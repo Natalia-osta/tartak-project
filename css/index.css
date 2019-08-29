@@ -1,6 +1,7 @@
 :root {
     --main-text-color: #fff;
     --second-color: #333;
+    --main-font: 'Hind Siliguri', sans-serif;
 }
 
 a{
@@ -11,7 +12,7 @@ ul{
     padding: 0;
 }
 h1, h2{
-    font-family: 'Hind Siliguri', sans-serif;
+    font-family: var(--main-font);
     font-weight: 300;
     text-transform: uppercase;
 }
@@ -49,23 +50,40 @@ nav{
 .header-title{
    text-align: center;
    margin-top: 35vh;
+   color: var(--second-color);
+   font-weight: 500;
+   font-size: 3em;
 }
 .header-subtitle{
     text-align: center;
+    font-family: var(--main-font);
+    text-transform: uppercase;
+    color: var(--second-color);
 }
-
 .about-wrap{
-padding: 0 15px;
+padding: 30px 15px;
 }
-
+.about-wrap h2{
+    margin: 0;
+}
  .about-bttn{
      display: inline-block;
-     width: 120px;
+     width: 130px;
      height: 30px;
-     border: 1px solid #333;
+     color: var(--main-text-color);
+     border: 1px solid var(--main-text-color);
      text-align: center;
      line-height: 30px;
-     font-family: 'Hind Siliguri', sans-serif;
-     color: #333;
-
+     font-family: var(--main-font);
+     text-transform: uppercase;
+     font-size: 11px;
+ }
+ .about-section{
+     background-color: var(--second-color);
+     color: var(--main-text-color);
+     font-family: var(--main-font);
+     border-bottom: 1px solid #999;
+ }
+ .img-block-about{
+     font-size: 15px;
  }
