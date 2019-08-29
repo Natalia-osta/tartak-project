@@ -1,5 +1,71 @@
+:root {
+    --main-text-color: #fff;
+    --second-color: #333;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
 h1, h2{
     font-family: 'Hind Siliguri', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
 }
+.wrap{
+    max-width: 980px;
+    margin: auto;
+}
+ header{
+     background: url('../img/slide-main-photo.jpeg');
+     height: 100vh;
+ }
+nav{
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 25px;
+
+}
+.nav-flex-container{
+    display: flex;
+    flex-direction: row;
+}
+.nav-flex-container li{
+    margin: 0 3px;
+}
+.nav-flex-container li a{
+    text-decoration: none;
+    color: var(--main-text-color);
+    text-transform: uppercase;
+    font-size: 11px;
+}
+.logo img{
+    width: 50px;
+}
+.header-title{
+   text-align: center;
+   margin-top: 35vh;
+}
+.header-subtitle{
+    text-align: center;
+}
+
+.about-wrap{
+padding: 0 15px;
+}
+
+ .about-bttn{
+     display: inline-block;
+     width: 120px;
+     height: 30px;
+     border: 1px solid #333;
+     text-align: center;
+     line-height: 30px;
+     font-family: 'Hind Siliguri', sans-serif;
+     color: #333;
+
+ }
