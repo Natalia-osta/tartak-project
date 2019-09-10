@@ -201,3 +201,48 @@ nav{
  .top{
      margin: 10px 0;
  }
+/*contact*/
+.contact-input input:active, :hover, :focus{
+    outline: 0;
+    outline-offset: 0;
+}
+.contact-input{
+    display: grid;
+    /*grid-template-columns: 1fr 1fr;*/
+}
+.contact-input-style input, label, span{
+    display: block;
+}
+.contact-input-style input{
+    width: 80%;
+    height: 30px;
+    color: var(--second-color);
+    margin: 0 auto;
+}
+.contact-input-style span{
+    font-size: 12px;
+    width: 80%;
+    margin: 5px auto;
+}
+.contact-textarea-style span{
+    font-size: 12px;
+    margin: 5px 0;
+    color: #000;
+}
+.contact-textarea-style{
+    width: 80%;
+    color: var(--second-color);
+    margin: 0 auto;
+}
+.contact-textarea-style textarea{
+    width: 100%;
+}
+.contact-send{
+    display: block;
+    width: 220px;
+    height: 45px;
+    background-color: var(--second-color);
+    border: 1px solid var(--second-color);
+    color: var(--main-text-color);
+    margin: 0 auto;
+}
