@@ -1,0 +1,45 @@
+ header{
+     width: 100%;
+     background: url('../img/slide-main-photo.jpeg');
+     background-size: cover;
+     height: 100vh;
+     position: fixed;
+     top: 0;
+     z-index: -1;
+ }
+ nav{
+    background-color: var(--second-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 25px;
+}
+.nav-flex-container{
+    display: flex;
+    flex-direction: row;
+}
+.nav-flex-container li{
+    margin: 0 3px;
+}
+.nav-flex-container li a{
+    text-decoration: none;
+    color: var(--main-text-color);
+    text-transform: uppercase;
+    font-size: 11px;
+    font-family: var(--main-font);
+}
+.logo img{
+    width: 50px;
+}
+.header-title{
+   text-align: center;
+   margin-top: 35vh;
+   color: var(--second-color);
+   font-weight: 500;
+   font-size: 3em;
+}
+.header-subtitle{
+    text-align: center;
+    font-family: var(--main-font);
+    text-transform: uppercase;
+    color: var(--second-color);
+}

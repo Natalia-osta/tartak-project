@@ -1,3 +1,4 @@
+@import url("header.css");
 :root {
     --main-text-color: #fff;
     --second-color: #333;
@@ -20,46 +21,14 @@ h1, h2{
     max-width: 1140px;
     margin: auto;
 }
- header{
-     background: url('../img/slide-main-photo.jpeg');
-     height: 100vh;
+
+ main{
+    width: 100%;
+    margin-top: 100vh;
+    z-index: 10;
+
  }
-nav{
-    background-color: var(--second-color);
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 25px;
-}
-.nav-flex-container{
-    display: flex;
-    flex-direction: row;
-}
-.nav-flex-container li{
-    margin: 0 3px;
-}
-.nav-flex-container li a{
-    text-decoration: none;
-    color: var(--main-text-color);
-    text-transform: uppercase;
-    font-size: 11px;
-    font-family: var(--main-font);
-}
-.logo img{
-    width: 50px;
-}
-.header-title{
-   text-align: center;
-   margin-top: 35vh;
-   color: var(--second-color);
-   font-weight: 500;
-   font-size: 3em;
-}
-.header-subtitle{
-    text-align: center;
-    font-family: var(--main-font);
-    text-transform: uppercase;
-    color: var(--second-color);
-}
+
 .about-wrap{
     padding: 30px 15px;
 }
@@ -90,13 +59,25 @@ nav{
      border-bottom: 1px solid var(--extra-color);
  }
  .img-block-about{
+     display: grid;
+     /*grid-template-columns: 1fr 1fr;*/
      font-size: 14px;
  }
- .img-about{
-     float: right;
-     width: 350px;
-     margin-left: 10px;
+ .wrap-img-about{
+     text-align: right;
  }
+ .img-about{
+     width: 400px;
+ }
+ .img-block-about p:nth-child(1){
+     align-self: center;
+     font-size:16px;
+     line-height: 1.5;
+ }
+  .img-block-about p:nth-child(2){
+      display: none;
+
+  }
  .bttn-certificates{
      text-align: center;
  }
@@ -151,6 +132,11 @@ nav{
     margin-top: 25px;
     text-align: center;
 }
+@media (max-width: 520px){
+    .index-gallery-block .block{
+     padding: 20px 30px;
+    }
+}
 .dark-footer{
      background-color: var(--second-color);
      padding: 25px 15px;
@@ -166,7 +152,6 @@ nav{
         font-size: 16px;
     }
 }
-
 .dark-footer{
      background-color: var(--second-color);
      padding: 25px 15px;
