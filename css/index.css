@@ -92,6 +92,11 @@ nav{
  .img-block-about{
      font-size: 14px;
  }
+ .img-about{
+     float: right;
+     width: 350px;
+     margin-left: 10px;
+ }
  .bttn-certificates{
      text-align: center;
  }
