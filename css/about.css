@@ -1,5 +1,6 @@
 .about-section{
    padding: 10% 30px;
+   box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 .about-wrap h2{
     margin: 0;
@@ -23,7 +24,7 @@
  }
  .img-block-about p:nth-child(1){
      align-self: center;
-     font-size:16px;
+     font-size:14px;
      line-height: 1.5;
      margin: 0;
  }
