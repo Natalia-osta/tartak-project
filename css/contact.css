@@ -1,3 +1,7 @@
+.contact-container-grid{
+    display: grid;
+    margin: 45px 0;
+}
 .contact-index{
     background-color:var(--second-color);
     padding: 10% 30px;
@@ -15,24 +19,33 @@
 }
 .contact-input-style input{
     width: 100%;
-    height: 30px;
+    height: 40px;
+    border:none;
     color: var(--second-color);
     margin: 0 auto;
 }
 .contact-input-style span{
     font-size: 12px;
     width: 80%;
-    margin: 5px auto;
+    margin: 0;
+    padding: 15px 0 20px 0;
+    color: var(--main-text-color);
+    font-family: var(--main-font);
 }
 .contact-textarea-style span{
     font-size: 12px;
-    margin: 5px 0;
-    color: #000;
-}
+    margin: 0;
+    padding: 15px 0 20px 0;
+    color: var(--main-text-color);
+    font-family: var(--main-font);
+    }
 .contact-textarea-style{
     width: 100%;
     color: var(--second-color);
     margin: 0 auto;
+}
+.contact-textarea-style textarea{
+    border: none;
 }
 .contact-textarea-style textarea{
     width: 100%;
@@ -41,8 +54,21 @@
     display: block;
     width: 220px;
     height: 45px;
-    background-color: var(--second-color);
-    border: 1px solid var(--second-color);
-    color: var(--main-text-color);
+    border: 1px solid var(--main-text-color);
+    color: var(--second-color);
     margin: 0 auto;
+}
+.contact-send:hover{
+    color: var(--second-color);
+    background-color: var(--main-text-color);
+    transition: .5s linear;
+}
+.block-address-contact{
+    color: var(--main-text-color);
+}
+.block-address-contact address ul li{
+    font-style: normal;
+    font-family: var(--main-font);
+    font-size: 12px;
+    line-height: 1.5;
 }

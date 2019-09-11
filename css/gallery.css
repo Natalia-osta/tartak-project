@@ -7,7 +7,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     grid-gap: 15px;
-    margin: 15px 0;
+    margin: 45px 0;
 }
 .gallery-index-block{
     text-align: center;

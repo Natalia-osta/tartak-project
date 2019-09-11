@@ -22,6 +22,7 @@ h1, h2{
     font-weight: 300;
     text-transform: uppercase;
     padding-bottom: 20px;
+    color: var(--main-text-color);
 }
 h2{
     margin: 0;
@@ -57,7 +58,11 @@ h2{
     }
     .contact-input{
     grid-template-columns: 1fr 1fr;
+     grid-column-gap: 30px;
 }
+    .contact-input-style span{
+    padding-bottom: 25px;
+    }
 }
 @media (min-width: 800px){
     .img-block-about p:nth-child(2){
@@ -80,6 +85,13 @@ h2{
          margin-top: 0;
          text-align: left;
      }
+     .contact-container-grid{
+         grid-template-columns: 2fr 1fr;
+     }
+    .block-address-contact{
+        text-align: right;
+    }
+
 
 }
 
