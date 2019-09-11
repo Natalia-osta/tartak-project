@@ -2,7 +2,6 @@
      background-color: var(--second-color);
      padding: 25px 15px;
 }
-
 .footer-wrap{
     display: flex;
     flex-direction: row;

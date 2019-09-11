@@ -23,6 +23,11 @@
     border:none;
     color: var(--second-color);
     margin: 0 auto;
+    transition: .4s all;
+}
+.contact-input-style input:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: .4s all;
 }
 .contact-input-style span{
     font-size: 12px;
@@ -45,17 +50,22 @@
     margin: 0 auto;
 }
 .contact-textarea-style textarea{
-    border: none;
-}
-.contact-textarea-style textarea{
     width: 100%;
+    border: none;
+    transition: .4s all;
+}
+.contact-textarea-style textarea:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: .4s all;
 }
 .contact-send{
     display: block;
     width: 220px;
     height: 45px;
     border: 1px solid var(--main-text-color);
-    color: var(--second-color);
+    color: var(--main-text-color);
+    background-color: var(--second-color);
+    font-family: var(--main-font);
     margin: 0 auto;
 }
 .contact-send:hover{
@@ -68,7 +78,14 @@
 }
 .block-address-contact address ul li{
     font-style: normal;
-    font-family: var(--main-font);
     font-size: 12px;
     line-height: 1.5;
+}
+.contact-phone a{
+    display: block;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--main-text-color);
 }

@@ -1,46 +1,3 @@
-@import url("media.css");
-@import url("header.css");
-@import url("footer.css");
-@import url("contact.css");
-@import url("about.css");
-@import url("gallery.css");
-
-:root {
-    --main-text-color: #fff;
-    --second-color: #333;
-    --extra-color: #999;
-    --main-font: 'Quicksand', sans-serif;
-}
-a{
-    text-decoration: none;
-}
-ul{
-    list-style: none;
-    padding: 0;
-}
-body{
-    font-family: var(--main-font);
-}
-h1, h2{
-    font-family: var(--main-font);
-    font-weight: 300;
-    text-transform: uppercase;
-    padding-bottom: 20px;
-    color: var(--main-text-color);
-}
-h2{
-    margin: 0;
-}
-.wrap{
-    max-width: 1140px;
-    margin: auto;
-}
- main{
-    width: 100%;
-    margin-top: 100vh;
-    z-index: 10;
- }
-
 @media (max-width: 520px){
     .index-gallery-block .block{
      padding: 20px 30px;
@@ -62,7 +19,7 @@ h2{
     .contact-input{
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 30px;
-}
+    }
     .contact-input-style span{
         padding-bottom: 25px;
     }
@@ -75,10 +32,10 @@ h2{
         padding: 0px;
     }
     .img-block-about p:nth-child(2){
-      display: block;
+        display: block;
     }
     .img-block-about{
-     grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
      }
     .img-block-about p:nth-child(1){
          padding-right: 0;
@@ -101,5 +58,3 @@ h2{
         text-align: right;
     }
 }
-
-

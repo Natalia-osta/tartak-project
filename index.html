@@ -10,20 +10,35 @@
         <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
+       <header>
             <div class="wrap-menu wrap">
-                <nav >
+                <div class="header-navigation">
                     <div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>
-                    <ul class=" nav nav-flex-container">
-                        <li><a href="allproduct.html">product</a></li>
-                        <li><a href="certificates.html">certificates</a></li>
-                        <li><a href="#">contact</a></li>
+                    <nav class="menu-block">
+                        <ul class="menu-nav">
+                            <li><a href="#">products</a></li>
+                            <li><a href="#">certificates</a></li>
+                            <li><a href="#">contact</a></li>
+                        </ul>
+                        <a href="#" class="menu-btn">
+                            <span></span>
+                        </a>
+                    </nav>
+                </div>
+                <div class="title-block">
+                    <div class="title">
+                        <h1 class="header-title">Tartak</h1>
+                        <p class="header-subtitle">From forest to building</p>
+                    </div>
+                    <ul class="slider-nav">
+                        <li class="slider-item"></li>
+                        <li class="slider-item"></li>
+                        <li class="slider-item"></li>
+                        <li class="slider-item"></li>
                     </ul>
-                </nav>
-                <h1 class="header-title">Tartak</h1>
-                <p class="header-subtitle">From forest to building</p>
+                </div>
             </div>
-        </header>
+       </header>
         <main>
             <section class="about-section">
                 <div class="wrap about-wrap">
@@ -70,56 +85,54 @@
                 </div>
             </section>
             <div class="contact-index">
-            <div class="wrap contact-wrap">
-            <h2>contact</h2>
-            <div class="contact-container-grid">
-            <form method="POST" action="" class="contact-grid">
-                <div class="contact-input">
-                    <label class="contact-input-style">
-                        <input required type="text" placeholder="" name="user-name" >
-                        <span>FULL NAME *</span>
-                    </label>
-                    <label class="contact-input-style">
-                        <input required type="email" placeholder="" name="email">
-                        <span>EMAIL ADDRESS*</span>
-                    </label>
-                    <label class="contact-input-style">
-                        <input required type="tel" name="user-phone"placeholder="+380931112233" >
-                        <span>PHONE NUMBER</span>
-                    </label>
+                <div class="wrap contact-wrap">
+                    <h2>contact</h2>
+                    <div class="contact-container-grid">
+                        <form method="POST" action="" class="contact-grid">
+                            <div class="contact-input">
+                                <label class="contact-input-style">
+                                    <input required type="text" placeholder="" name="user-name" title="Enter your full name">
+                                    <span>FULL NAME *</span>
+                                </label>
+                                <label class="contact-input-style">
+                                    <input required type="email" placeholder="" name="email" title="Enter your email">
+                                    <span>EMAIL ADDRESS *</span>
+                                </label>
+                                <label class="contact-input-style">
+                                    <input required type="tel" name="user-phone" placeholder=" +380931112233" title="Enter your phone nomber">
+                                    <span>PHONE NUMBER</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="contact-textarea-style">
+                                    <textarea name="MESSAGE"  cols="20" rows="10"></textarea>
+                                    <span>MESSAGE</span>
+                                </label>
+                                <input class="contact-send" type="submit" value="SEND MESSAGE">
+                            </div>
+                        </form>
+                        <div class="block-address-contact">
+                            <address>
+                                <ul>
+                                    <li>Ukraine</li>
+                                    <li>4 Zavodska str., Mizuhj</li>
+                                    <li>Ivano-Frankivsk region, </li>
+                                    <li>Ukraine, 77552</li>
+                                </ul>
+                            </address>
+                            <address class="contact-phone">
+                                <a href="tel:+380501110022">+380501110022</a>
+                                <a href="tel:+380931110022">+380931110022</a>
+                                <a href="mailto:tartak@gmail.com">tarak@mail.com</a>
+                            </address>
+                            <div class="sacial-link">
+                                <a href="facebook.com">facebook</a>
+                                <a href="Instagram.com">Instagram</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="">
-                <label class="contact-textarea-style">
-                    <textarea name="MESSAGE"  cols="20" rows="10"></textarea>
-                    <span>MESSAGE</span>
-                </label>
-                <input class="contact-send" type="submit" value="SEND MESSAGE">
-                </div>
-            </form>
-            <div class="block-address-contact">
-                <address>
-                    <ul>
-                        <li>Ukraine</li>
-                        <li>4 Zavodska str., Mizuhj</li>
-                        <li>Ivano-Frankivsk region, </li>
-                        <li>Ukraine, 77552</li>
-                    </ul>
-                </address>
-                <address>
-                    <a href="tel:+380501110022">+380501110022</a>
-                    <a href="tel:+380931110022">+380931110022</a>
-                    <a href="mailto:tartak@gmail.com">tarak@mail.com</a>
-                </address>
-                <div class="sacial-link">
-                    <a href="facebook.com">facebook</a>
-                    <a href="Instagram.com">Instagram</a>
-                </div>
             </div>
-            </div>
-            </div>
-            </div>
-
-
         </main>
         <footer class="dark-footer">
             <div class=" wrap footer-wrap">
@@ -137,12 +150,13 @@
                     <a href="tel:+380931110022">+380931110022</a>
                     <a href="mailto:tartak@gmail.com">tarak@mail.com</a>
                 </address>
-                    <div class="sacial-link top">
+                <div class="sacial-link top">
                     <a href="facebook.com">facebook</a>
                     <a href="Instagram.com">Instagram</a>
                 </div>
             </div>
         </footer>
+        <script src="js/index.js"></script>
     </body>
 </html>
 
