@@ -54,7 +54,6 @@
     font-size: 14px;
     font-family: var(--main-font);
     color: var(--main-text-color);
-    margin-top: 70px;
     text-align: center;
 }
 .gallery-button{
@@ -70,6 +69,7 @@
     text-transform: uppercase;
     font-size: 14px;
     margin: 0 auto;
+    padding-bottom: 70px;
 }
 .gallery-button::before{
     position: absolute;
@@ -80,4 +80,14 @@
     background-size: cover;
     top: 25px;
     left: 49px;
+}
+
+@media (min-width: 540px) {
+    .gallery-index-block:nth-child(5) {
+        display: none;
+    }
+    .index-gllr-rm{
+        width: 210px;
+
+    }
 }

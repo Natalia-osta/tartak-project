@@ -89,3 +89,13 @@
     line-height: 1.5;
     color: var(--main-text-color);
 }
+
+@media (min-width: 540px) {
+    .contact-input {
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 30px;
+    }
+    .contact-input-style span {
+      padding-bottom: 25px;
+    }
+}

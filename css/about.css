@@ -52,3 +52,36 @@
      margin-top: 50px;
      text-align: center;
  }
+
+  @media (min-width: 768px) {
+    .img-block-about p:nth-child(1){
+      font-size: 16px;
+    }
+    .img-block-about {
+      grid-template-columns: 1fr 1fr;
+    }
+    .img-block-about p:nth-child(2) {
+      display: block;
+    }
+
+    .img-block-about p:nth-child(1) {
+      padding-right: 0;
+    }
+    .about-bttn {
+      width: 260px;
+      height: 45px;
+      font-size: 14px;
+      line-height: 45px;
+      font-weight: 100;
+    }
+    .bttn-certificates {
+      margin-top: 0;
+      text-align: left;
+    }
+    .contact-container-grid {
+      grid-template-columns: 2fr 1fr;
+    }
+    .block-address-contact {
+      text-align: right;
+    }
+  }
