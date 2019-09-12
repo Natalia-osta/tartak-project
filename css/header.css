@@ -2,7 +2,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background: url('../img/slide-main-photo.jpeg');
+  background: url('../img/slider/1.jpg');
   background-size: cover;
   height: 100vh;
   width: 100%;
@@ -12,52 +12,62 @@ header {
   padding-top: 30px;
   display: flex;
   justify-content: space-between;
+  padding: 0 15px;
 }
 .logo img {
   margin-top: 20px;
   width: 50px;
-  padding-left: 45px;
 }
 .menu-block {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 45px;
+
 }
 .menu-nav li {
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 7px;
     transition: 1s;
+    border-bottom: 1px solid #333;
+    min-width: 135px;
 }
 .menu-nav li a{
     color: #333;
     text-transform: uppercase;
     font-weight: 400;
     display: inline-block;
+    font-size: 13px;
     font-family: 'Roboto', sans-serif;
+    padding-left: 15px;
+    /* line-height: 20px; */
 }
 .menu-nav {
-    transition: 0.2s;
-    transform: scaleX(0) translateX(0%);
-    transform-origin: right center;
+    position: absolute;
+    top: -6px;
+    right: 24px;
+    transition: 0.4s;
+    transform: scaleY(1) translateY(0);
+    transform-origin: right bottom;
     opacity: 0;
     visibility: hidden;
-    height: 50px;
+    height: 200px;
     line-height: 50px;
     background-color: #fff;
-    padding-right: 25px;
-    padding-left: 25px;
+    padding-top: 20px;
     margin-right: -25px;
     border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 .menu-nav_active {
-    transform: scaleX(1) translateX(0%);
+    transform: scaleY(1) translateY(0);
     opacity: 1;
     visibility: visible;
+    transition: 0.4s;
 }
 
 /* БУРГЕР */
@@ -132,11 +142,50 @@ header {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  /* background-color: var(--main-text-color); */
   border: 1px solid var(--main-text-color);
   cursor: pointer;
 }
 .slider-item:nth-child(2){
   background-color: var(--main-text-color);
-  /* border: 1px solid var(--main-text-color); */
+
+}
+
+@media (min-width: 574px) {
+  .header-navigation {
+    padding-top: 30px;
+  }
+
+  .menu-nav{
+    right: 38px;
+    transform: scaleX(1) translateX(0%);
+    opacity: 1;
+    visibility: visible;
+    height: 50px;
+    width: 400px;
+    padding-top: 0;
+    border-bottom-left-radius: 50px;
+    padding-left: 15px;
+  }
+  .menu-nav li {
+    margin-right: 15px;
+    border-bottom: none;
+    min-width: auto;
+}
+
+.menu-nav_active {
+  transition: 0.2s;
+  transform: scaleX(1) translateX(0%);
+  transform-origin: right center;
+  opacity: 0;
+  visibility: hidden;
+  height: 50px;
+  line-height: 50px;
+  background-color: #fff;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-right: -25px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
 }
