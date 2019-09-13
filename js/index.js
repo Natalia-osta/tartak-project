@@ -7,8 +7,6 @@ function toogleMenu(evt){
     menuNavigation.classList.toggle('menu-nav_active');
 }
 
-
-
 const header = document.querySelector("header");
 const items = document.querySelectorAll(".slider-nav  li.slider-item");
 
@@ -23,7 +21,6 @@ function itemPressed(ev){
         header.style.background ="url('../img/slider/2.jpg')";
         header.style.backgroundSize ="cover";
         header.style.transition=".5s linear";
-        this.classList.toggle('item-bg-off');
 }
     else
         header.style.background ="url('../img/slider/3.jpg')";

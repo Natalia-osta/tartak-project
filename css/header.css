@@ -146,12 +146,6 @@
 /*.slider-item:nth-child(1){
   background-color: var(--main-text-color);
 }*/
-.item-bg-on{
-     background-color: var(--main-text-color);
-}
-.item-bg-off{
-     background-color: none;
-}
 
 @media (min-width: 574px) {
   .header-navigation {
