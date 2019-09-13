@@ -7,6 +7,7 @@
   height: 100vh;
   width: 100%;
   z-index: -1;
+  transition: .5s linear;
 }
 .header-navigation {
   padding-top: 30px;
@@ -69,8 +70,6 @@
     visibility: visible;
     transition: 0.4s;
 }
-
-/* БУРГЕР */
 .menu-btn {
     display: block;
     width: 50px;
@@ -113,7 +112,6 @@
     width: 10px;
     transform-origin: left top;
 }
-
 .title-block{
   display: grid;
   grid-template-columns: 1fr 30px;
@@ -145,16 +143,20 @@
   border: 1px solid var(--main-text-color);
   cursor: pointer;
 }
-.slider-item:nth-child(2){
+/*.slider-item:nth-child(1){
   background-color: var(--main-text-color);
-
+}*/
+.item-bg-on{
+     background-color: var(--main-text-color);
+}
+.item-bg-off{
+     background-color: none;
 }
 
 @media (min-width: 574px) {
   .header-navigation {
     padding-top: 30px;
   }
-
   .menu-nav{
     right: 38px;
     transform: scaleX(1) translateX(0%);
@@ -170,9 +172,6 @@
     margin-right: 15px;
     border-bottom: none;
     min-width: auto;
-}
-.red{
-    background-color: red;
 }
 
 .menu-nav_active {
