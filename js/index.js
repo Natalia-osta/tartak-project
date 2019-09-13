@@ -14,16 +14,16 @@ items.forEach( li => li.addEventListener("click", itemPressed));
 
 function itemPressed(ev){
     if (items[0] === ev.target){
-        header.style.background ="url('../img/slider/1.jpg')";
+        header.style.background ="url('img/slider/1.jpg')";
         header.style.transition=".5s linear";
 }
     else if (items[1] === ev.target){
-        header.style.background ="url('../img/slider/2.jpg')";
+        header.style.background ="url('img/slider/2.jpg')";
         header.style.backgroundSize ="cover";
         header.style.transition=".5s linear";
 }
     else
-        header.style.background ="url('../img/slider/3.jpg')";
+        header.style.background ="url('img/slider/3.jpg')";
         header.style.backgroundSize ="cover";
         header.style.transition=".5s linear";
 }
